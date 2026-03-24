@@ -1372,3 +1372,74 @@ audio {
     		-webkit-transform: scale(0.9);
     	}
     }*/
+
+/* ============================================== MOBILE RESPONSIVE
+*/
+@media (max-width: 768px) {
+  /* Album Photos */
+  .album-photo {
+    width: 120px !important; /* Smaller to guarantee center gap */
+    height: auto !important;
+    border: 3px solid white !important;
+  }
+  .album-left-1 { top: 20px !important; left: 5px !important; transform: rotate(-3deg) !important; z-index: 5 !important; }
+  .album-left-2 { top: 160px !important; left: 5px !important; transform: rotate(3deg) !important; z-index: 5 !important; }
+  .album-right-1 { top: 20px !important; right: 5px !important; transform: rotate(3deg) !important; z-index: 5 !important; }
+  .album-right-2 { top: 160px !important; right: 5px !important; transform: rotate(-3deg) !important; z-index: 5 !important; }
+
+  /* Cake & Profile picture position */
+  .cake {
+    width: 230px !important; /* Slightly smaller cake */
+    margin-left: -115px !important;
+    bottom: 50% !important; 
+    transform: translateY(35%) !important;
+    z-index: 2 !important; 
+  }
+  .profile-img {
+    width: 75px !important;
+    height: 75px !important;
+    bottom: -10px !important;
+    right: 50% !important;
+    margin-right: -37px !important; 
+    transform: translateY(110%) !important;
+  }
+
+  /* Fixed Bottom Nav style tweak */
+  .navbar-fixed-bottom {
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.15) !important;
+    padding: 6px 0 !important;
+    z-index: 2000 !important; 
+  }
+  .navbar-fixed-bottom .row .btn {
+    width: 85% !important;
+    margin: 4px auto !important;
+    display: block !important;
+    font-size: 14px !important;
+  }
+  
+  /* Message content layout */
+  .message {
+    padding-top: 60px !important;
+    position: relative !important;
+    z-index: 100 !important;
+  }
+  .message p {
+    font-size: 18px !important;
+    padding: 0 10px !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Banners overlay resizing */
+  .bannar {
+    width: 85% !important; 
+    margin-top: 10px !important;
+  }
+  .balloon-border {
+    display: none !important; 
+  }
+  
+  .can-zoom {
+    display: none !important; 
+  }
+}
